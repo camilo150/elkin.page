@@ -1,66 +1,79 @@
-.contenedor-descripcion{
-    width: 80%;
-    height: 100vh;
-    position: relative;
-    left: 16%;
-    text-wrap:wrap;
+@media (width >= 771px){
+.fondo {
+    padding-bottom: 50vh;
 }
 
-.introduccion{
+.contenedor-descripcion {
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    left: 20%;
+    text-wrap: wrap;
+}
+
+.introduccion {
     position: relative;
     top: 1vh;
     left: 2%;
     font-size: 3vw;
-    font-weight: 300;
+    font-weight:400;
     color: black;
     background-color: rgba(207, 207, 207, 0.63);
     border-radius: 0.5rem;
-    padding: 10px 15px; /* Añade espacio interno para que el texto no quede pegado a los bordes */
-   
+    padding: 10px 15px;
 }
 
 .descripcion {
     position: absolute;
-    top: 40vh;
-    left: 1vw;
-    font-size: 1vw;
+    width: 76vw;
+    top: 40%;
+    left: 0%;
+    font-size: 2vh;
     color: black;
     font-weight: 500;
-    background-color: rgba(204, 204, 204, 0.726); /* Mayor claridad en la transparencia */
-    padding: 10px 15px; /* Añade espacio interno para que el texto no quede pegado a los bordes */
-    border-radius: 0.5rem; /* Corrige el error en border-radius */
-    letter-spacing: 1px;
-    line-height: 1.5; /* Mejora la legibilidad */
-    max-width: 90%; /* Evita que el texto se extienda demasiado */
-    text-align: justify; /* Justifica el texto para mejor presentación */
+    background-color: rgba(204, 204, 204, 0.726);
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    line-height: 1.2;    
+    
 }
 
-.lista-experiencias{
-    width: 62vw;
+.lista-experiencias {
+    width: 70%;
     position: relative;
-    top: 40vh;
-    left: 6%;
+    top: 50vh;
+    left: 15%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 elementos por fila */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5vw;
-    font-size: 1vw;
+    font-size:1.5vw;
     font-weight: 700;
 }
-.lista-experiencia{
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.801);
+
+.lista-experiencia {
+    color: rgb(0, 0, 0);
+    background-color: rgba(177, 165, 165, 0.801);
     text-align: center;
     border-radius: 0.5rem;
 }
-.contenedor-trabajos{
+
+li::marker {
+    color: rgb(75, 63, 63);
+}
+
+.contenedor-trabajos {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 80%;
+    width: 70%;
     position: relative;
-    left: 16.5vw;
+    top: 20vw;
+    left: 23%;
     background-color: rgba(0, 0, 0, 0.767);
     padding: 20px;
 }
-.contenedor-trabajos h2{
+
+.contenedor-trabajos h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,19 +84,325 @@
     padding: 10px 0px 10px 0px;
     border-radius: 0.5rem;
 }
-.contenedor-trabajos-imagen{
+
+.contenedor-trabajos-imagen {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 
 }
-.trabajo-foto{
+
+.trabajo-foto {
     border-radius: 0.3rem;
-    height: 70vh;
-    width: 23vw;
-    border-style:double;
-  
+    height: 80%;
+    width: 100%;
+    border-style: double;
+
 }
-.trabajo-foto{
+}
+@media(min-width: 120px) AND (max-width:421px)  {
+    .fondo {
+        padding-bottom: 200vh
+    }
+
+    .contenedor-descripcion {
+        width: 96%;
+        height: 100vh;
+        text-wrap: wrap;
+        position: relative;
+        left: 0;
+    }
+
+    .introduccion {
+        position: relative;
+        top: 1vh;
+        font-size: 5vw;
+        font-weight: 300;
+        color: black;
+        background-color: rgba(167, 167, 167, 0.795);
+        border-radius: 0.5rem;
+        padding: 10px 15px;
+    }
+
+    .descripcion {
+        position: relative;
+        top: 10vh;
+        left: 2%;
+        font-size: 4vw;
+        color: black;
+        font-weight: 500;
+        background-color: rgba(204, 204, 204, 0.726);
+        padding: 10px 15px;
+        border-radius: 0.5rem;
+        line-height: 1.3;
+        max-width: 100%;
+        /* Evita que el texto se extienda demasiado */
+        text-align: initial;
+    }
+
+    .lista-experiencias {
+        width: 95%;
+        position: relative;
+        top: 20vh;
+        left: -2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* 4 elementos por fila */
+        gap: 1.5vh;
+        font-size: 4.5vw;
+        font-weight: 700;
+    }
+
+    .lista-experiencia {
+        color: rgb(0, 0, 0);
+        background-color: rgba(177, 165, 165, 0.801);
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .contenedor-trabajos {
+        height: auto;
+        width: 95vw;
+        position: relative;
+        top: 130vw;
+        left: 2.2vw;
+        background-color: rgba(0, 0, 0, 0.767);
+        padding: 5% 5% 10% 5%;
+        border-radius: 0.5rem;
+        margin-bottom: 8vh;
+        margin-top: 0vh;
+
+    }
+
+    .contenedor-trabajos h2 {
+        display: flex;
+        text-align: center;
+        margin-bottom: 10%;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        background-color: rgba(112, 57, 6, 0.877);
+        padding: 10px 0px 10px 0px;
+        border-radius: 0.5rem;
+    }
+
+    .contenedor-trabajos-imagen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-left: -5px;
+
+    }
+
+    .trabajo-foto {
+        border-radius: 0.3rem;
+        height: 30vh;
+        width: 42vw;
+        object-fit: cover;
+
+    }
+}
+@media(min-width:422px) AND (max-width:425px){
+     .fondo {
+        padding-bottom: 200vh
+    }
+
+    .contenedor-descripcion {
+        width: 96%;
+        height: 100vh;
+        text-wrap: wrap;
+        position: relative;
+        left: 1%;
+    }
+
+    .introduccion {
+        position: relative;
+        top: 1vh;
+        font-size: 5vw;
+        font-weight: 300;
+        color: black;
+        background-color: rgba(167, 167, 167, 0.795);
+        border-radius: 0.5rem;
+        padding: 10px 15px;
+    }
+
+    .descripcion {
+        position: relative;
+        top: 10vh;
+        left: 2%;
+        font-size: 4vw;
+        color: black;
+        font-weight: 500;
+        background-color: rgba(204, 204, 204, 0.726);
+        padding: 10px 15px;
+        border-radius: 0.5rem;
+        line-height: 1.3;
+        max-width: 100%;
+        /* Evita que el texto se extienda demasiado */
+        text-align: initial;
+        /* Justifica el texto para mejor presentación */
+    }
+
+    .lista-experiencias {
+        width: 95%;
+        position: relative;
+        top: 20vh;
+        left: -2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* 4 elementos por fila */
+        gap: 1.5vh;
+        font-size: 4.5vw;
+        font-weight: 700;
+    }
+
+    .lista-experiencia {
+        color: rgb(0, 0, 0);
+        background-color: rgba(177, 165, 165, 0.801);
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .contenedor-trabajos {
+        height: auto;
+        width: 95vw;
+        position: relative;
+        top: 120vw;
+        left: 2.2vw;
+        background-color: rgba(0, 0, 0, 0.767);
+        padding: 5% 5% 5% 5% ;
+        border-radius: 0.5rem;
+        margin-bottom: 8vh;
+        margin-top: 0vh;
+
+    }
+
+    .contenedor-trabajos h2 {
+        display: flex;
+        text-align: center;
+        margin-bottom: 10%;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        background-color: rgba(112, 57, 6, 0.877);
+        padding: 10px 0px 10px 0px;
+        border-radius: 0.5rem;
+    }
+
+    .contenedor-trabajos-imagen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-left: -3vw;
+
+    }
+
+    .trabajo-foto {
+        border-radius: 0.3rem;
+        height: 30vh;
+        width: 42vw;
+        object-fit: cover;
+
+    }
+}
+@media(min-width:426px) and (max-width:770px) {
+    .fondo {
+        padding-bottom: 225vh
+    }
+
+    .contenedor-descripcion {
+        width: 90vw;
+        height: 100vh;
+        text-wrap: wrap;
+        position: relative;
+        left: 3vw;
+    }
+
+    .introduccion {
+        position: relative;
+        top: 1vh;
+        font-size: 5vw;
+        font-weight: 300;
+        color: black;
+        background-color: rgba(167, 167, 167, 0.795);
+        border-radius: 0.5rem;
+        padding: 10px 15px;
+    }
+
+    .descripcion {
+        position: relative;
+        top: 10vh;
+        left: 2%;
+        font-size:1rem;
+        color: black;
+        font-weight: 500;
+        background-color: rgba(204, 204, 204, 0.726);
+        padding: 10px 15px;
+        border-radius: 0.5rem;
+        line-height: 1.3;
+        max-width: 100%;
+        /* Evita que el texto se extienda demasiado */
+        text-align: initial;
+        /* Justifica el texto para mejor presentación */
+    }
+
+    .lista-experiencias {
+        width: 50vw;
+        position: relative;
+        top: 20vh;
+        left: 25%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* 4 elementos por fila */
+        gap: 1.5vh;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .lista-experiencia {
+        color: rgb(0, 0, 0);
+        background-color: rgba(177, 165, 165, 0.801);
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .contenedor-trabajos {
+        height: auto;
+        width: 95vw;
+        position: relative;
+        top: 32rem;
+        left: 2.2vw;
+        background-color: rgba(0, 0, 0, 0.767);
+        padding-top: 20px;
+        border-radius: 0.5rem;
+        margin-bottom: 8vh;
+        margin-top: 0vh;
+        padding: 5px 5px 5px 5px;
+
+    }
+
+    .contenedor-trabajos h2{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0px 5% 0px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        background-color: rgba(112, 57, 6, 0.877);
+        padding: 10px 0px 10px 0px;
+        border-radius: 0.5rem;
+    }
     
+    .contenedor-trabajos-imagen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-left: 3%;
+    }
+    
+    .trabajo-foto {
+        border-radius: 0.3rem;
+        border-style: double;
+        height: 30vh;
+        width: 42vw;
+        object-fit: cover;
+
+    }
 }
