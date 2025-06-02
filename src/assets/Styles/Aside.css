@@ -55,6 +55,11 @@
         top: 10vh;
         font-size: 3vh;
     }
+    .aside{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
 }
 
 @media(min-width: 120px) AND (max-width:421px) {
@@ -111,8 +116,10 @@
     }
 
     .aside {
-        position: absolute;
-        top: 570vh;
+  width: 100%;
+  padding: 0px;
+  position: relative; /* posición normal */
+  margin-top: 142%;
     }
 }
 

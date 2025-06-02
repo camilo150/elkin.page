@@ -49,7 +49,7 @@ const Inicio = () => {
   return (
     <>
       <section className='fondo'>
-      <section className='aside'><Aside></Aside></section>
+      
       <section className='contenedor-descripcion'>
       <h1 className='introduccion' >Hola, soy Elkin Dario Castrillón,<br/>con más de 30 años de experiencia en la construcción y remodelación de edificaciones</h1>
       <p className='descripcion' >A lo largo de mi trayectoria, he trabajado en proyectos residenciales, comerciales e industriales, especializándome en estructuras de mampostería, acabados y restauraciones. Mi enfoque está en la precisión, el uso eficiente de materiales y el cumplimiento de los más altos estándares de seguridad y calidad. Me apasiona el oficio y siempre busco soluciones prácticas y duraderas para cada proyecto, garantizando satisfacción y confianza a mis clientes y empleadores además de un excelente uso del orden y el cuidado de mi area de trabajo, caracterizandome por la pulcritud y eficiencia.</p>
@@ -75,6 +75,7 @@ const Inicio = () => {
           ))}
           </section>
       </section> 
+      <section className='aside'><Aside></Aside></section>
       </section>
     
     </>
